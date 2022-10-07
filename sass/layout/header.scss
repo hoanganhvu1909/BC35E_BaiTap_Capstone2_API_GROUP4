@@ -1,0 +1,14 @@
+header{
+    .header{
+        background-color: $color-black;
+    }
+    .header__logo img{
+        width: 116px;
+        height: 32px;
+        top: 10px;
+        left: 24px;
+    }
+    .header__account li {
+        display: inline !important;
+    }
+}
