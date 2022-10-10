@@ -115,7 +115,148 @@ header .header__content .header__account a {
     padding-left: 10px;
   }
 }
-.menu .container ul .active {
+.menu .container ul .menu__item a {
+  text-decoration: none;
+  padding: 10px 0;
+  color: #000;
+  font-weight: 24px;
+  font-size: 20px;
+  padding: 0 20px 0 20px;
+  transition: 300ms ease all;
+}
+.menu .container ul .menu__item a::after {
+  content: "";
+  display: block;
+  width: 0%;
+  border-bottom: 1px solid black;
+  transition: 0.8s ease all;
+}
+.menu .container ul .menu__item a:hover {
+  color: #E1B067;
+  transform: scale(1.1);
+}
+.menu .container ul .menu__item a:hover::after {
+  width: 100%;
+  border-bottom: 1px solid #F8B653;
+}
+.menu .container ul #active {
   font-weight: 400;
   padding-left: 16px !important;
+}
+.menu .container ul #active::after {
+  content: "";
+  display: block;
+  width: 100%;
+  border-bottom: 1px solid #E1B067;
+  transition: 0.8s ease all;
+}
+.menu .container ul #active:hover {
+  color: black;
+  transform: scale(1.1);
+}
+.menu .container ul #active:hover::after {
+  width: 0%;
+}
+
+.carousel {
+  background-image: url(./../../imgs/image\ 6.png);
+  background-repeat: no-repeat;
+  background-position: bottom right;
+  background-size: 100%;
+  min-height: 500px;
+}
+.carousel .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+@media (max-width: 768px) {
+  .carousel .container .carousel__img {
+    width: 200px;
+    margin-left: 30px;
+  }
+}
+@media (max-width: 575px) {
+  .carousel .container .carousel__img {
+    width: 120px;
+    margin-left: 20px;
+  }
+}
+.carousel .container .carousel__img img {
+  width: 100%;
+  padding-right: 35px;
+}
+@media (max-width: 576) {
+  .carousel .container .carousel__img img {
+    width: 100%;
+    padding-right: 10px;
+  }
+}
+@media (max-width: 768px) {
+  .carousel .container .carousel__img img {
+    width: 100%;
+  }
+}
+.carousel .container .carousel__content {
+  padding-right: 30px;
+  min-width: 300px;
+}
+@media (max-width: 576px) {
+  .carousel .container .carousel__content {
+    min-width: 130px !important;
+    padding-right: 0 !important;
+  }
+}
+@media (max-width: 768px) {
+  .carousel .container .carousel__content {
+    min-width: 200px;
+    padding-right: 90px;
+  }
+}
+.carousel .container .carousel__content h2 {
+  font-size: 40px;
+  font-weight: 300;
+  line-height: 48px;
+  color: #000;
+}
+@media (max-width: 576px) {
+  .carousel .container .carousel__content h2 {
+    font-size: 18px !important;
+  }
+}
+@media (max-width: 768px) {
+  .carousel .container .carousel__content h2 {
+    font-size: 22px;
+  }
+}
+.carousel .container .carousel__content p {
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 24px;
+  color: #000;
+}
+@media (max-width: 576px) {
+  .carousel .container .carousel__content p {
+    font-size: 16px !important;
+  }
+}
+.carousel .container .carousel__content button {
+  outline: none;
+  background-color: #F8B653;
+  color: #fff;
+  padding: 13px 35px;
+  font-size: 20px;
+  font-weight: 300;
+  border-color: transparent;
+}
+@media (max-width: 576px) {
+  .carousel .container .carousel__content button {
+    padding: 5px 16px;
+    font-size: 12px;
+  }
+}
+@media (max-width: 768px) {
+  .carousel .container .carousel__content button {
+    padding: 8px 25px;
+  }
 }/*# sourceMappingURL=main.css.map */

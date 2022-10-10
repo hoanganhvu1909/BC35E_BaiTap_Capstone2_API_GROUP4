@@ -109,9 +109,46 @@ header {
 
             }
 
-            .active {
+            .menu__item a{
+                text-decoration: none;
+                @include text($text-color-black, $medium, $small);
+                padding: 0 20px 0 20px;
+                transition: 300ms ease all;
+                &::after {
+                  content: "";
+                  display: block;
+                  width: 0%;
+                  border-bottom: 1px solid black;
+                  transition: 0.8s ease all;
+                }
+                &:hover {
+                  color:$bg-btn;
+                  transform: scale(1.1);
+                  
+                  &::after {
+                    width: 100%;
+                    border-bottom: 1px solid $bg-btn;
+                  }
+                }
+              }
+
+            #active {
                 font-weight: 400;
                 padding-left: 16px !important;
+                &::after {
+                    content: "";
+                    display: block;
+                    width: 100%;
+                    border-bottom: 1px solid $bg-btn;
+                    transition: 0.8s ease all;
+                  }
+                  &:hover {
+                    color: black;
+                    transform: scale(1.1);
+                    &::after {
+                      width: 0%;
+                    }
+                  }
             }
         }
     }
