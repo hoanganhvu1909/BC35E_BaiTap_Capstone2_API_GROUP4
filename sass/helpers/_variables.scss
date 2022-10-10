@@ -4,6 +4,25 @@ $text-color-black: #000;
 // color
 $color-black: #000;
 $color-white: #F5F5F5;
-$yellow: #E1B067;
+$yellow: #F8B653;
 $black: #000000;
 $grey: #DEDDDC;
+$bg-btn: #E1B067;
+
+// Font size
+
+$xxsmall: 16px;
+$xsmall: 18px;
+$small: 20px;
+$medium: 24px;
+$large: 29px;
+$midlarge: 40px;
+$xlarge: 48px;
+
+
+@mixin text($text-color: $light-text-color, $font-w:$regular, $font-s: $medium){
+    padding: 10px 0;
+    color: $text-color;
+    font-weight: $font-w;
+    font-size: $font-s;
+}
