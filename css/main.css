@@ -137,7 +137,7 @@ header .header__content .header__account a {
 }
 .menu .container ul .menu__item a:hover::after {
   width: 100%;
-  border-bottom: 1px solid #F8B653;
+  border-bottom: 1px solid #E1B067;
 }
 .menu .container ul #active {
   font-weight: 400;
@@ -158,89 +158,39 @@ header .header__content .header__account a {
   width: 0%;
 }
 
-.carousel {
+.carousel__bg {
   background-image: url(./../../imgs/image\ 6.png);
   background-repeat: no-repeat;
   background-position: bottom right;
   background-size: 100%;
-  min-height: 500px;
+  min-height: 530px;
 }
-.carousel .container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+.carousel__bg .container .carousel__img {
+  transform: scale(1.1);
 }
-@media (max-width: 768px) {
-  .carousel .container .carousel__img {
-    width: 200px;
-    margin-left: 30px;
-  }
+.carousel__bg .container .carousel__img img {
+  width: 821px;
+  height: 392px;
+  padding-left: 86px;
 }
-@media (max-width: 575px) {
-  .carousel .container .carousel__img {
-    width: 120px;
-    margin-left: 20px;
-  }
-}
-.carousel .container .carousel__img img {
-  width: 100%;
-  padding-right: 35px;
-}
-@media (max-width: 576) {
-  .carousel .container .carousel__img img {
-    width: 100%;
-    padding-right: 10px;
-  }
-}
-@media (max-width: 768px) {
-  .carousel .container .carousel__img img {
-    width: 100%;
-  }
-}
-.carousel .container .carousel__content {
-  padding-right: 30px;
+.carousel__bg .container .carousel__content {
+  padding-top: 124px;
+  padding-left: 300px;
   min-width: 300px;
 }
-@media (max-width: 576px) {
-  .carousel .container .carousel__content {
-    min-width: 130px !important;
-    padding-right: 0 !important;
-  }
-}
-@media (max-width: 768px) {
-  .carousel .container .carousel__content {
-    min-width: 200px;
-    padding-right: 90px;
-  }
-}
-.carousel .container .carousel__content h2 {
+.carousel__bg .container .carousel__content h2 {
   font-size: 40px;
   font-weight: 300;
   line-height: 48px;
   color: #000;
 }
-@media (max-width: 576px) {
-  .carousel .container .carousel__content h2 {
-    font-size: 18px !important;
-  }
-}
-@media (max-width: 768px) {
-  .carousel .container .carousel__content h2 {
-    font-size: 22px;
-  }
-}
-.carousel .container .carousel__content p {
+.carousel__bg .container .carousel__content p {
   font-size: 20px;
   font-weight: 300;
   line-height: 24px;
   color: #000;
 }
-@media (max-width: 576px) {
-  .carousel .container .carousel__content p {
-    font-size: 16px !important;
-  }
-}
-.carousel .container .carousel__content button {
+.carousel__bg .container .carousel__content button {
   outline: none;
   background-color: #F8B653;
   color: #fff;
@@ -250,13 +200,42 @@ header .header__content .header__account a {
   border-color: transparent;
 }
 @media (max-width: 576px) {
-  .carousel .container .carousel__content button {
+  .carousel__bg .container .carousel__content button {
     padding: 5px 16px;
     font-size: 12px;
   }
 }
-@media (max-width: 768px) {
-  .carousel .container .carousel__content button {
-    padding: 8px 25px;
-  }
+.carousel__bg .container button {
+  background: none;
+  border: none;
+}
+.carousel__bg .container .carousel-control-next {
+  padding-left: 80px;
+}
+.carousel__bg .container .carousel-control-next .carousel-control-next-icon {
+  color: black;
+  background-image: url(./../../imgs/Polygon\ 1.png) !important;
+  width: 65px;
+  height: 45px;
+}
+.carousel__bg .container .carousel-control-prev {
+  padding-right: 80px;
+}
+.carousel__bg .container .carousel-control-prev .carousel-control-prev-icon {
+  background-image: url(./../../imgs/Polygon\ 2.png) !important;
+  color: black;
+  width: 65px;
+  height: 45px;
+}
+.carousel__bg .container ol {
+  position: absolute;
+  bottom: 88px !important;
+}
+.carousel__bg .container .carousel-indicators li {
+  width: 15px;
+  height: 15px;
+  margin: 0 15px;
+  border: 1px solid rgba(0, 0, 0, 0.13);
+  border-radius: 50%;
+  background-color: whitesmoke;
 }/*# sourceMappingURL=main.css.map */
