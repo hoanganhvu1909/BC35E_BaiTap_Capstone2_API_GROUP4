@@ -238,4 +238,93 @@ header .header__content .header__account a {
   border: 1px solid rgba(0, 0, 0, 0.13);
   border-radius: 50%;
   background-color: whitesmoke;
+}
+
+.product {
+  padding-top: 46px;
+}
+.product .container .col {
+  padding: 0;
+}
+.product .container .row {
+  padding: 0;
+  margin: 0;
+}
+.product .container .feature-header h2 {
+  text-align: center;
+  padding: 10px 0;
+  color: #000;
+  font-weight: 600;
+  font-size: 29px;
+}
+.product .container .feature-body {
+  padding-top: 65px;
+}
+.product .container .feature-body .product-card {
+  padding: 25px 34px;
+}
+.product .container .feature-body .product-card .card-body {
+  background-color: #F8F8F8;
+  position: relative;
+}
+.product .container .feature-body .product-card .card-body img {
+  width: 100%;
+  padding: 45px 57px 104px 57px;
+  transition: all 1s linear;
+}
+.product .container .feature-body .product-card .card-body img:hover {
+  transform: scale(1.1);
+}
+.product .container .feature-body .product-card .card-body .titles {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+.product .container .feature-body .product-card .card-body .titles .product-title {
+  padding: 10px 0;
+  color: #000;
+  font-weight: 300;
+  font-size: 24px;
+  padding: 0 0 8px 23px;
+  margin: 0;
+}
+.product .container .feature-body .product-card .card-body .titles .product-description {
+  padding: 10px 0;
+  color: #CBC9C9;
+  font-weight: 300;
+  font-size: 20px;
+  padding: 0;
+  padding: 0 0 8px 23px;
+  margin: 0;
+}
+.product .container .feature-body .product-card .card-actions {
+  display: flex;
+  font-size: 24px;
+  line-height: 29px;
+}
+.product .container .feature-body .product-card .card-actions .btn-buy {
+  width: 50%;
+  background-color: #E1B067;
+  border: none;
+  border-radius: none;
+  text-decoration: none;
+  padding: 10px 0;
+  color: #000;
+  font-weight: 400;
+  font-size: 20px;
+  padding: 17px 27px 18px 39px;
+  transition: all 1s ease;
+}
+.product .container .feature-body .product-card .card-actions .btn-buy:hover {
+  background-color: #000;
+  color: #E1B067;
+}
+.product .container .feature-body .product-card .card-actions .price-text {
+  font-size: 24px;
+  line-height: 29px;
+  background-color: #DEDDDC;
+  width: 50%;
+  text-align: center;
+  padding: 17px 40px 18px 66px;
+  margin: 0;
 }/*# sourceMappingURL=main.css.map */
