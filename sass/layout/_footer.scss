@@ -1,0 +1,37 @@
+
+.footer{
+    margin-top: 10rem;
+    .footer__up{
+       padding: 1rem 0;
+       a, p{
+        padding-top: 2rem;
+        // padding-bottom: 1rem;
+        font-size: 1rem;
+        font-weight: 300;
+        color: red;
+       }
+       a:hover{
+        color: $text-color-black;
+       }
+       .btn__footer{
+        font-weight: 400;
+        color: $bg-btn;
+       }
+       .btn__footer:hover{
+        color: $yellow;
+       }
+       .footer__items{
+        width: 33.33%;
+        padding-left: 2rem;
+        border-left: 1px solid $color-black;
+       }
+       
+    }
+    .footer__down{
+        @extend .footer__up;
+        background-color: $color-white;
+    }
+}
+
+
+
