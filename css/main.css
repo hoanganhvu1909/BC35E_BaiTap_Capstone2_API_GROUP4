@@ -327,4 +327,35 @@ header .header__content .header__account a {
   text-align: center;
   padding: 17px 40px 18px 66px;
   margin: 0;
+}
+
+.footer {
+  margin-top: 10rem;
+}
+.footer .footer__up, .footer .footer__down {
+  padding: 1rem 0;
+}
+.footer .footer__up a, .footer .footer__down a, .footer .footer__up p, .footer .footer__down p {
+  padding-top: 2rem;
+  font-size: 1rem;
+  font-weight: 300;
+  color: red;
+}
+.footer .footer__up a:hover, .footer .footer__down a:hover {
+  color: #000;
+}
+.footer .footer__up .btn__footer, .footer .footer__down .btn__footer {
+  font-weight: 400;
+  color: #E1B067;
+}
+.footer .footer__up .btn__footer:hover, .footer .footer__down .btn__footer:hover {
+  color: #F8B653;
+}
+.footer .footer__up .footer__items, .footer .footer__down .footer__items {
+  width: 33.33%;
+  padding-left: 2rem;
+  border-left: 1px solid #000;
+}
+.footer .footer__down {
+  background-color: #F5F5F5;
 }/*# sourceMappingURL=main.css.map */
